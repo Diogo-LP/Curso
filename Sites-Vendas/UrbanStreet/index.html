@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanStreet</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/3143d98b09.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/js/produtos.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class=" d-flex align-items-center justify-content-between">
+      <div class="left">
+        <div class="l-menu"><i class="fa-solid fa-bars pointer"></i></div>
+        <img class="logo" src="assets/img/logo.png" alt="">
+      </div>
+      <div class="search">
+        <div class="input-search"><input type="text" placeholder="Pesquisa..." id="search" name="" id=""></div>
+        <div class="icon-search"><i class="fa-solid fa-magnifying-glass pointer"></i></div>
+      </div>
+      <div class="menu-icons d-flex">
+        <div><i class="fa-solid fa-user pointer"></i></div>
+        <div><i class="fa-solid fa-cart-shopping pointer"></i></div>
+      </div>
+    </nav>
+    <div class="filler"></div>
+  </header>
+
+  <main>
+    <div class="promocao">
+      <span style="font-weight: 300;"><i style="color: white;" class="fa-solid fa-gift"></i> 10% DE DESCONTO NA PRIMEIRA
+        COMPRA</span>
+    </div>
+    <div class="guias">
+      <a href="camisetas.html"><button class="btn-guia">CAMISETAS</button></a>
+      <a href="calcas.html"><button class="btn-guia">CALÇAS</button></a>
+      <a href="moletons.html"><button class="btn-guia">MOLETONS</button></a>
+      <a href="bones.html"><button class="btn-guia">BONÉS</button></a>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img-slide w-100" style="background-image: url('assets/img/banner2.jpg');"></div>
+        </div>
+        <div class="carousel-item ">
+          <div class="img-slide w-100" style="background-image: url('assets/img/banner.jpg');"></div>
+        </div>
+        <div class="carousel-item ">
+          <div class="img-slide w-100" style="background-image: url('assets/img/banner3.jpg');"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="lancamentos" class="d-flex justify-content-center align-items-center flex-column">
+      <span class="title">LANÇAMENTOS</span>
+      <div class="carousel-prod">
+
+        <div class="itens-prod">
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item-prod">
+            <div class="card border-0">
+              <div class="image-wrapper"><img class="card-img-top"
+                  src="assets/img/camisas/camiseta_streetwear_prison_black_hype_logo-front.png" alt="..."></div>
+              <div class="card-body d-flex justify-content-cente align-items-center flex-column">
+                <h5 class="card-title">Camiseta Streetwear Prison Preta</h5>
+                <span class="preco">R$ 89,90</span>
+                <span class="parcela">Em até 4x de R$19,60 sem juros</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carbtn prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carbtn next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="main-footer">
+      <div class="logo-footer"><img class="logo" src="assets/img/logo.png" alt=""></div>
+
+      <div class="cats row">
+
+        <div class="col">
+          <h3>Atendimento</h3>
+          <div class="ul">
+            <a class="li"><i class="fa-regular fa-envelope"></i><span>urbanstreetltda@gmail.com</span></a>
+            <a class="li"><i class="fa-solid fa-phone"></i><span>(18) 99801-9950</span></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <h3>Redes Sociais</h3>
+          <div class="ul" style="text-align: center;">
+            <a class="li"><i class="fa-brands fa-instagram"></i><span>UrbanStreet</span></a>
+          </div>
+        </div>
+
+        
+        <div class="col">
+          <h3>Categorias</h3>
+          <div class="ul" style="text-align: center;" >
+            <a class="li"><span>Camisetas</span></a>
+            <a class="li"><span>Calças</span></a>
+            <a class="li"><span>Moletons</span></a>
+            <a class="li"><span>Bonés</span></a>
+          
+          </div>
+        </div>
+
+      </div>
+      UrbanStreet® - Todos os direitos reservados | R. Saudades - N° 479 - Birigui / São Paulo - CNPJ: 15.065.894/0001-75
+
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+<script>
+
+  var prods = $('.itens-prod')
+  var count = 0
+  var go = 0
+
+  var produtos = document.querySelectorAll('.item-prod')
+
+  $('.carbtn.next').click(() => {
+    if (count == produtos.length / 2) {
+      count = 0
+      go = count * -19
+      prods.css('margin-left', go + 'rem')
+    } else {
+      count++
+      go = count * -19
+      prods.css('margin-left', go + 'rem')
+    }
+  })
+
+  $('.carbtn.prev').click(() => {
+    if (count == 0) {
+      count = 0
+    } else {
+      count--
+      go = count * -19
+      prods.css('margin-left', go + 'rem')
+    }
+
+  })
+
+</script>
+
+</html>

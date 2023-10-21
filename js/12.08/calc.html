@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3143d98b09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">CALCULADORA IMC</div>
+        <div class="info"></div>
+    </div>
+    
+
+    <div class="container">
+        <div id="corpo">
+            <div class="top">
+                <div id="info"></div>
+                <div id="visor"><input type="text"></div>
+            </div>    
+            <hr>
+            <div id="numbers">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var body = document.getElementById('corpo')
+    var visor = document.getElementById('visor')
+    var input = document.querySelector('input[type="text"]')
+    var info = document.getElementById("info")
+    var numbers = document.getElementById("numbers")
+
+    for(let i = 9; i > -1; i--){
+        var num = document.createElement('div')
+        num.className = 'number'
+        num.textContent = i
+        num.addEventListener('click', ()=>{
+            input.value += i
+        })
+
+        if(i==0){
+            var next = document.createElement('div')
+            next.setAttribute('class', 'number next')
+            next.innerHTML = '<i class="fa-solid fa-arrow-right"></i>'
+            next.addEventListener('click', ()=>{})
+
+            var ponto = document.createElement('div')
+            ponto.className = 'number'
+            ponto.textContent = '.'
+            ponto.addEventListener('click', ()=>{
+                if(!input.value.includes('.')){
+                    input.value += '.'
+                }
+        })
+            numbers.append(next)
+            numbers.append(num)
+            numbers.append(ponto)
+        }else{
+            numbers.append(num)
+        }
+        
+    }
+    function imc(){
+        var info = document.querySelector('.info')
+        info.textContent = 'Informe Seu Peso em Kg'
+    }
+    imc()
+
+</script>
+</html>

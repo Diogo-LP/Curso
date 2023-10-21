@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>JQuery</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Metal Mania';
+        text-align: center;
+    }
+    body{
+        background-repeat: no-repeat;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+    h2{
+        font-weight: lighter;
+    }
+    .ball{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15rem;
+    }
+    #try{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    #try input{
+        width: 7rem;
+        border: none;
+        background: transparent;
+        font-size: 5rem;
+        padding: 1rem;
+    }
+    .range{
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #range{
+
+    }
+</style>
+<body>
+    <h1>Bem vindo ao Jogo de Advinhação</h1>
+    <h2>Será srteado um número <br> você terá 5 chances para acertar</h2>
+    <div class="ball">
+        <div>🔮</div>
+        <div id="try"><input maxlength="3" type="text"></div>
+    </div>
+    Escolha sua Dificuldade:
+    <div class="range"><input value="10" type="range" min="10" max="1000" name="" id="range" ><span>10</span></div>
+    <button id="play">Jogar</button>
+</body>
+<script>
+    var repeater;
+
+    $('#range').mouseover(function(){
+        repeater = setInterval(()=>{
+            $(".range span").html($("#range").val())
+        }, 100)
+    })
+    $('#range').mouseout(function(){
+        clearInterval(repeater)
+    })
+    
+    $('#play').on("click", function(){
+        $("#play").css('display', 'none')
+        let life = 5
+        let rand = Math.floor(Math.random()*max)
+        while(life != 0){
+            alert('Tente Advinhar')
+        }
+    })    
+</script>
+</html>

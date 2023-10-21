@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin-bottom: 0 !important;
+}
+body{
+    background-color: #FFF3E1;
+}
+header{
+    background-image: url("../img/zyro-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.nav-link{
+    font-family: 'Inter';
+    transition: all 0.3s;
+}
+.nav-link:hover{
+    scale: 1.1;
+}
+.gradient{
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+}
+.logo{
+    width: 220px;
+}
+.ornament{
+    background-image: url('../img/ornament.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+.links{
+    width: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around;
+}
+.assine{
+    font-family: 'Inter';
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}
+.cesta{
+    font-family: 'Arizonia';
+    font-size: 1.9em;
+    font-weight: 400;
+}
+main{
+    width: 100%;
+}
+.choco-col-1{
+    background-image: url("../img/chocolate-col1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.choco-col-2{
+    background-image: url("../img/chocolate-col2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.txt-sobre{
+    width: 70%;
+}
+h2{
+    font-family: 'Inter';
+    font-weight: bold;
+    color: #573531;
+}
+section{
+    margin-top: 80px;
+}
+.content{
+    margin-left: 25px;
+    margin-right: 25px;
+    justify-content: space-around;
+}
+.ro{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+.gradient-i{
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.801));
+    display: flex;
+    align-items: end;
+}
+.p-content{
+    margin-top: 50px;
+}
+.w-90{
+    width: 94% !important;
+    margin-bottom: 4%;
+}
+p{
+    color: gray;
+}
+.cesta-cont{
+    margin-top: 5%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-image: url('../img/footerbkgrnd-2.png');
+    background-size: contain;
+}
+.redes-sociais{
+    margin-top: 200px;
+}
+i{
+    margin-left: 0.3em;
+    font-size: 2em;
+    color: white;
+}
+.ing-title{
+    padding: 10px 0 0 10px;
+}
+.ingredientes{
+    position: relative;
+    background-color: white; 
+    border: 1px solid rgba(47, 47, 47, 0.494);
+    box-shadow: 0 0px 12px rgba(198, 198, 198, 0.354);
+    margin-top: -10px;
+    border-radius: 10px;
+    z-index: -1;
+    height: 500px;
+    transition: height 0.45s;
+}
+h3{
+    padding-top: 20px !important;
+}
+.op-0{
+    height: 0 !important;
+    opacity: 0 !important;
+}
+footer{
+    gap: 20px   ;
+}
+.txt-cesta-info{
+    font-size: 0.9em;
+}
+.ro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(178, 178, 178);
+}
+body{
+    overflow-x: hidden;
+}
+.oferta{
+    width: 90% !important;
+    display: flex;
+    flex-direction: row;
+}
+.preco-ant{
+    font-family: 'Inter';
+    font-weight: bold;
+    text-decoration: line-through red !important;
+    float: left;
+}
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 0.5em;
+    border: none !important;
+    background-color: transparent !important;
+}
+.card-img-top{
+    border-radius: 20px;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    text-align: center;
+    font-weight: lighter;
+
+}
+.card-body *{
+    font-family: 'Inter';
+}
+.card-txt{
+    font-size: 1.5em;
+    color: black !important;
+    font-weight: bold;
+}
+.card-parcela{
+    text-align: center;
+    font-weight: lighter;
+}

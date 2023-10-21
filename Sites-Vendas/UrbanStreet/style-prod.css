@@ -1,0 +1,134 @@
+.container-produtos{
+    padding: 1rem;
+}
+.left-filter{
+    padding: 0 1rem;
+    height: 100vh;
+}
+.left-filter .sect:last-child{
+    border: none;
+}
+.ul{
+    display: flex;
+    flex-direction: column;
+}
+.ul a, .hovsel{
+    transition: all .4s;
+    color: #181818;
+    text-decoration: none;
+}
+.ul a:hover, .hovsel:hover{
+    color: #c1c1c1;
+    cursor: pointer;
+}
+.sect{
+    padding: .7rem;
+    border-bottom: 2px solid #D9D9D9;
+}
+.border-ball{
+    transition: all .4s;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 2px solid #858585;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-ball:hover {
+    cursor: pointer;
+    border: 2px solid #c1c1c1;
+}
+.border-ball:hover .ball{
+    background: #c1c1c1;
+}
+.ball{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+.sect h4{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.cards-wrapper{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+}
+.card{
+    border-radius: 0 !important;
+    width: 15.5rem;
+    height: 24rem;
+    transition: all 0.5s;
+}
+.card:hover{
+    box-shadow: 0 0px 12px rgba(114, 114, 114, 0.568);
+    z-index: 10;
+}
+.image-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 17em;
+}
+.card-img-top{
+    max-width: 90%;
+    height: 90%;
+    object-fit: contain;
+    transition: all .5s;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.preco{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.card-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1em;
+}
+.parcela{
+    font-weight: 200;
+}
+.ro{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+.range{
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background-color: #3FB3F4;
+    outline: none;
+    height: 4px;
+    border-radius: 10px;
+    width: 70%;
+
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #3FB3F4;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 700px) {
+    .left-filter{
+        width: 0;
+        display: none;
+    }
+    
+}

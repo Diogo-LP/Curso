@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
+
+:root {
+    --cor-footer: #2D2D2D;
+    --cor-secundaria: #DC2A20;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito";
+    text-decoration: none;
+}
+body{
+    color: #FFF;
+    background-color: #1E1E1E !important;
+    height: 100vh;
+}
+hr.separa{
+    margin: 0;
+    margin-top: 20px;
+    height: 4px;
+    width: 25%;
+    background-color: #B42A21;
+    border: none;
+}
+
+nav, header, nav div{
+    color: #fff;
+    padding: 0 !important;
+    background-color: #2d2d2d !important;
+}
+.nav-link{
+    color: #fff !important;
+}
+
+.header-sobre-galeria{
+    background-color: #2d2d2d !important;
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 10rem;    
+}
+.logo:hover{
+    animation: abacate 1s;
+    cursor: pointer;
+}
+
+#home{
+    font-size: 45px;
+    color: #fff;
+}
+
+@keyframes abacate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate( 360deg);
+    }
+}
+
+
+.alinha-header-esquerda{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.home-texto{
+   Opacity: 15;
+   text-decoration: none;
+   color: #e26e66;
+}
+
+.home-texto:hover{
+    opacity: 100%;
+    cursor: pointer;
+    color: #B42A21;
+    animation: letspace 2s;
+    text-decoration: none;
+    
+}
+@keyframes letspace{
+    0%{
+        letter-spacing: auto;
+    }
+    50%{
+        letter-spacing: 15px;
+    }
+    100%{
+        letter-spacing: auto;
+    }
+}
+
+.header-sobre-galeria{
+    background-color: #2d2d2d;
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.logo:hover{
+    animation: abacate 1s;
+    cursor: pointer;
+}
+
+i{
+    font-size: 45px;
+    color: #fff;
+}
+
+@keyframes abacate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate( 360deg);
+    }
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    width: 100%;
+    height: 442px;
+  display: grid;
+  grid-template-areas:
+    'menu menu header header header right'
+    'menu menu header header header right'
+    'footer footer footer main main right';
+  gap: 10px;
+}
+.maindex{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+
+}
+.grid-container > div {
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+.mosaico{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.prof {
+    margin: 50px 10px 10px 10px;
+}
+section.prof h2{
+    font-size: 2em;
+}
+.prof-container{
+    margin-top: -20px;
+    height: 500px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.left{
+    text-align: center
+}
+.left p{
+    font-size: 1.2em;
+
+    margin-top: 20px;
+}
+.right{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.profile{
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background-image: url(../img/sebastiao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-texto{
+    padding-right: 20px;
+}
+
+footer{
+    margin-top: 60px;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--cor-footer);
+  }
+  .footer-title{
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+  }
+  .footer-informacoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-informacoes div{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-informacoes a{
+    color: white;
+  }
+  .footer-informacoes a:hover{
+    text-decoration: underline;
+  }
+  .footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 14px;
+  }
+  .footer-img-logo{
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo p{
+    padding-bottom: 20px;
+  }
+  
+  .footer-img-logo:hover{
+    animation: abacate 1s;
+    cursor: pointer;
+  }
+.grid-container div{
+    transition: all 1s;
+}
+.grid-container div:hover{
+    transform: scale(1.05);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.alinha-header-esquerda{
+    margin-right: 20px;
+  }
+  
+  .home-texto{
+   Opacity: 15;
+   text-decoration: none;
+   color: #e26e66;
+  }
+  
+  .home-texto:hover{
+    opacity: 100%;
+    cursor: pointer;
+    color: #B42A21;
+    animation: letspace 2s;
+    text-decoration: none;
+    
+  }
+  @keyframes letspace{
+    0%{
+        letter-spacing: auto;
+    }
+    50%{
+        letter-spacing: 15px;
+    }
+    100%{
+        letter-spacing: auto;
+    }
+  }
+  
+  .sobre-banner{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+  }
+  
+  .texto-sobre-banner{
+    text-align: center;
+    font-size: 40px;
+    padding: 120px;
+  }
+  
+  .sobre-contato{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .baixo-contato,
+  .cima-contato{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+  
+  .cima-contato{
+    padding-bottom: 25px;
+  }
+  
+  .baixo-contato{
+    padding-bottom: 25px;
+  }
+  
+  #icone1,
+  #icone2,
+  #icone3,
+  #icone4,
+  #icone5,
+  #icone6{
+    cursor: pointer;
+    font-size: 38px;
+    padding-bottom: 5px;
+  }
+  
+  .card {
+    background-color: #2D2D2D;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  p.title{
+    color: #fff;
+  }
+  
+  #agenda section{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 100;
+  }
+  
+  .form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 23px;
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+  .form .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: transparent;
+    transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea,
+  .form .group select {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  .form .group select{
+    color: #fff;
+  }
+  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label, .form .group select:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .form .group input:focus,
+  .form .group textarea:focus,
+  .form .group select:focus {
+    color: #fff;
+    border-color: white;
+  }
+  .form .group select option{
+
+    background-color: #2D2D2D;
+  }
+  
+  .form .group input:focus+ label, .form .group textarea:focus +label, .form .group select:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #2D2D2D;
+    color: #B42A21;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form button {
+    background-color: #e26e66;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 32px;
+  }
+  
+  .form button:hover {
+    background-color:#B42A21;
+  }
+  
+  @media screen and (min-width: 2560px) {
+    main *, footer *{
+        flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 426px){
+    .cima-contato, .baixo-contato{
+      display: block;
+    }
+    .cima-contato *, .baixo-contato *{
+      margin-top: 5px;
+    }
+    .texto-sobre-banner{
+      padding: 60px;
+      font-size: 1.4em;
+    }
+  }
+  @media screen and (max-width: 376px) {
+    .card{
+      width: 80%;
+    }
+  }
+
+@media screen and (max-width: 770px) {
+    .right{
+        font-size: 1em;
+    }
+    .flex-container{
+        text-align: center;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    main *, footer *{
+        flex-wrap: wrap;
+    }
+    .home-texto{
+        display: none;
+    }
+    header a:nth-child(1){
+        padding-right: 20px;
+    }
+    .item4{
+        display: none;
+    }
+    .grid-container{
+        grid-template-areas:
+        'menu menu header header header'
+        'menu menu header header header'
+        'footer footer footer main main';
+    }
+    .right{
+        display: block;
+        font-size: .9em;
+        margin-top: -40px;
+    }
+
+    .profile{
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .prof-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .maindex{
+        padding-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    footer, .footer-img-logo, .footer-informacoes{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer *{
+        padding: 0px;
+    }
+
+    .prof-container{
+        padding-bottom: 10px;
+    }
+    .right{
+        font-size: .85em;
+    }
+    
+}
+
+@media screen and (max-width: 321px) {
+
+    header i{
+        font-size: 2em;
+    }
+
+    #home{
+        font-size: 2em;
+    }
+    .right{
+        font-size: .8em;
+    }
+}
+main{
+    margin: 25px;
+}
+h1{
+    margin-top: 60px;
+}
+.flex-container{
+    margin-top: 40px;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-foto{
+    width: 15rem;
+    height: 565px;
+}
+.foto{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 496px;
+    margin-bottom: 15px;
+    transition: all 0.9s;
+}
+.foto:hover{
+    transform: scale(1.05);
+}
+.legenda{
+    padding: 5px;
+    border-radius: 18px;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    background-color: #353535;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+}
+@media screen and (min-width: 2560px) {
+    main *, footer *{
+        flex-wrap: wrap;
+    }
+}
+#container-beneficios{
+    padding-top: 40px;
+}
+
+.parte-beneficios{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cards-beneficios{
+    text-align: center;
+    background-color: var(--branco);
+    padding: 15px;
+    border: none;
+    box-shadow: 5px 5px 15px #cbcbcb,
+                -5px -5px 15px #c2c2c2;
+    padding: 25px;
+    width: 20rem;
+    border-radius: 30px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.cards-beneficios:hover{
+    transform: scale(1.075);
+    transition: 0.8s;
+    background-color: #424242;
+}
+
+.dar-padding-top{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.imgs-beneficios{
+    border-radius: 20px;
+    height: 110px;
+    width: 110px;
+}
+
+.textinho-beneficios{
+    color: #fff;
+    padding-top: 10px;
+    font-family: 'Niramit', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.descricao-cards{
+    color:rgb(162, 162, 162);
+    padding-top: 10px;
+    font-family: 'Niramit', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.agendado{
+    color: #fff;
+    padding: 1rem;
+    margin: 0;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.agendado li.agendItem{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #B42A21;
+}
+.agendado::-webkit-scrollbar{
+    display: none;
+} 
+.agendas .card{
+    height: 35rem;
+    overflow-y: hidden;
+}
+.email{
+    color: #757575;
+}
+.dropdown-menu{
+    color: #fff;
+    background-color: #2d2d2d;
+    padding: .5rem;
+}
+.dropdown-menu li{
+    padding: 1rem;
+    border: 1px solid #B42A21;
+    border-radius: 10px;
+
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700&family=Koulen&display=swap');
+
+* {
+    text-decoration: none !important;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.carousel-title{
+    width: 100%;
+    text-align: center;
+    font-family: 'Inter';
+    margin-top: 2rem !important;
+}
+.ro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(178, 178, 178);
+}
+body{
+    overflow-x: hidden;
+}
+.oferta{
+    width: 90% !important;
+    display: flex;
+    flex-direction: row;
+}
+.preco-ant{
+    font-family: 'Inter';
+    font-weight: bold;
+    text-decoration: line-through red !important;
+    float: left;
+}
+#searchbar{
+    font-family: 'Inter';
+    font-size: large;
+    width: 100%;
+    padding:15px;
+    border: none;
+    background-color: transparent;
+}
+#searchbar:focus{
+    outline: none;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: white;
+    border-radius: 35px; 
+    border: 1px solid black;
+}
+.lupa{
+    margin-right: 17px;
+    border: none;
+    background-color: transparent;
+}

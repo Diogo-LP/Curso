@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Titulo Aqui</h1>
+    <p id="sub">Um texto aqui</p>
+
+    <p class='txt'>Um texto aqui</p>
+    <p class='txt'>Um texto aqui</p>
+    <p class='txt'>Um texto aqui</p>
+
+
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+
+    <div class="container">
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+    </div>
+
+</body>
+<script>
+
+    var sub = document.getElementById('sub')
+
+    var lista =document.getElementById('lista')
+
+    var txts = document.getElementsByClassName('txt')
+
+    var itens = document.getElementsByTagName('li')
+
+    var firstDiv = document.querySelector('.content')
+    var allDivs = document.querySelectorAll('.content')
+
+    sub.textContent = 'Texto alterado'
+
+    firstDiv.setAttribute('id', 'first')
+
+    sub.style.backgroundColor = "red"
+    sub.style.color = '#fff'
+
+    var newP =  document.createElement('p')
+    newP.textContent = 'NOVO PARAGRAFO'
+
+    document.body.appendChild(newP)
+
+    lista.removeChild(itens[0])
+    
+
+</script>
+</html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Berlin';
+    src: url(../Berlinsans\ Demi\ Regular.otf);
+}
+body{
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Berlin';
+}
+nav{
+    padding: 0 !important;
+    margin: 0;
+    gap: .4rem;
+    position: fixed;
+    background-image: url(../img/navbg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 1px 10px #dadada;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    gap: 2rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Berlin';
+    color: #86DF6A !important;
+}
+.logo-ff{
+    margin-top: -.3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+}
+.logo-ff .text{
+    margin-top: -0.8rem;
+    padding-bottom: .2rem;
+}
+.promocao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.img-slide{
+    height: 400px;
+    background-repeat: no-repeat;
+}
+.guias{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    gap: .5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-guia{
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 15rem;
+    font-size: 1rem;
+    padding: .2rem;
+    transition: transform .6s;
+}
+.btn-guia:hover{
+    transform: scale(1.05);
+}
+section{
+    margin-top: 30px;
+}
+.preco{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.card-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+}
+.parcela{
+    font-weight: 200;
+}
+.ro{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+.l-menu{
+    color: #fff;
+    margin-left: 1.5rem;
+}
+.fa-bars{
+    font-size: 2rem;
+}
+.logo{
+    padding-top: .2rem;
+    width: 5rem;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.4rem;
+}
+.search{
+    font-family: 'Inter';
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: .35rem 1rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.input-search{
+    font-family: 'Inter';
+    width: 90%;
+}
+#search{
+    border: none;
+    width: 100%;
+}
+#search:focus{
+    outline: none;
+}
+.search i{
+    font-size: 1.5rem;
+}
+.menu-icons i{
+    color: #fff;
+    font-size: 2rem;
+}
+.menu-icons{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+.card-inner{
+    display: flex;
+}
+.carousel-inner{
+    border-radius: 20px;
+}
+.carousel{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+}
+#carouselExampleControls{
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+.carousel a{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(192, 192, 192);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 13rem;
+}
+.carousel-control-prev{
+    margin-left: -1.5rem;    
+}
+.carousel-control-next{
+    margin-right: -1.5rem;    
+}
+.carousel-control-prev-icon {
+    margin-left: -0.2rem;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    transform: rotate(180deg);
+    margin-left: .37rem;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+#promocoes{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.carousel-prod{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itens-prod{
+    justify-content: center;
+    display: flex;
+    flex-direction: row !important;
+    gap: 1rem;
+    transition: all .5s;
+    overflow-x: hidden;
+}
+.item-prod{
+    background-size: cover;
+    background-position: center;
+    width: calc((100vw / 3.5));
+    height: calc((100vw / 3.5));;
+}
+.carbtn{
+    border: none;
+    border-radius: 50%;
+    font-size: 2.3em;
+    color: #fff;
+    background-color: #aeaeae65;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+}
+.prev{
+    left: 1rem;
+}
+.next{
+    right: 1rem;
+}
+.next{
+    right: 1rem;
+}
+
+footer{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #86DF6A;
+}
+.main-footer{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    gap: 1rem;
+}
+.main-footer div.logo-footer{
+    display: flex;
+    justify-content: center;
+}
+.cats{
+    text-align: center;
+}
+.cats h3{
+    font-weight: 400;
+}
+.ul{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.li{
+    font-size: 1.1rem;
+}
+.li i{
+    font-size: 1.25rem;
+}
+.li span{
+    margin-left: .4rem;
+}
+footer a{
+    transition: all .4s;
+    color: #181818;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #c1c1c1;
+    cursor: pointer;
+}
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 0.5em;
+    border: none !important;
+    background-color: transparent !important;
+}
+.card-img-top{
+    border-radius: 20px;
+    border-top-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    font-weight: lighter;
+
+}
+.card-body *{
+    font-family: 'Berlin';
+}
+.card-txt{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.card-parcela{
+    text-align: center;
+    font-weight: lighter;
+}
+@media screen and (max-width: 640px) {
+    .search{
+        display: none;
+    }
+    .guias{
+        flex-direction: column;
+    }
+}

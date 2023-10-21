@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var matriz = [
+        [1,2,3],
+        [4,5,6]
+        
+    ]
+    var matriz2 = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ]
+
+    var id = "São identicas"
+
+    if(matriz.lenght == matriz2.length){
+
+    for(let i=0; i < matriz.length; i++){
+        for(let j=0; j < matriz[i].length; j++){
+            if(matriz[i][j] != matriz2[i][j]){
+                id = 'Não sao identicas'
+            }
+        }
+    }
+    }else{
+        id="Não é possivel realizar a operação"
+    }   
+    alert(id)
+</script>
+</html>
