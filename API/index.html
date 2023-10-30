@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const url = 'https://google-translate1.p.rapidapi.com/language/translate/v2';
+    const options = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'application/gzip',
+            'X-RapidAPI-Key': '277672f14emsh688dee3f2d23b08p1e3177jsnaed29ce7d124',
+            'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
+        },
+        body: new URLSearchParams({
+            q: 'Hello, world!',
+            target: 'es',
+            source: 'en'
+        })
+    };
+
+    async function busca() {
+        try {
+            const response = await fetch(url, options);
+            const result = await response.json();
+            console.log(result.data.translations[0].translatedText);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    busca()
+</script>
+
+</html>

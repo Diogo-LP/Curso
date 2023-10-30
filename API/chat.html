@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Chat</title>
+</head>
+
+<body>
+    <input type="text" id="text">
+    <button id="btn">Enviar</button>
+
+    <h3 id="resposta"></h3>
+</body>
+<script>
+    $("#btn").on("click", async function () {
+        const url = "https://api.openai.com/v1/chat/completions"
+
+        const configs = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer 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"
+            },
+            body: JSON.stringify({
+                "model": "gpt-3.5-turbo",
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "Pedro é um assistente grosseiro e raivoso e sempre gosta de terminar as suas falas falando: 'de nada, micropênis!'"
+                    },
+                    {
+                        "role": "user",
+                        "content": $("#text").val()
+                    }
+                ]
+            })
+        }
+
+        let response = await fetch(url, configs)
+        let result = await response.json()
+
+        $("#resposta").html(result.choices[0].message.content)
+
+    })
+</script>
+
+</html>
